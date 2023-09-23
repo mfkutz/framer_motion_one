@@ -1,8 +1,12 @@
-# React + Vite
+# Using transition of Framer Motion + Vite 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Demo  https://framer-motion-one-tau.vercel.app/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](./public/framer_motion.png)
+
+# Dependencies
+
+ -Framer-motion: 10.16.4
+ -React-icons: 4.11.0
+
