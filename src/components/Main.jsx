@@ -48,6 +48,7 @@ const Main = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
+                    whileHover={{ scale: 1.1 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -181,7 +182,7 @@ const Main = () => {
             <div className="flex items-center gap-8">
                 <motion.img
                     src="https://img.freepik.com/foto-gratis/hermosa-mujer-elegante-sonriendo-mirando-interesado_176420-19460.jpg?w=1380&t=st=1695390921~exp=1695391521~hmac=7fb4435563f428d89652030e83b3b67b5e56551a18d371d9c135754e99f7ff0b" alt=""
-                    className="h-56 w-56 object-cover rounded-3xl grayscale"
+                    className="h-56 w-56 object-cover rounded-3xl grayscale transform "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -192,9 +193,7 @@ const Main = () => {
                     }}
 
                 />
-                <motion.img
-                    src="https://img.freepik.com/foto-gratis/alegre-mujer-mediana-edad-cabello-rizado_1262-20859.jpg?w=1380&t=st=1695392116~exp=1695392716~hmac=53b4da669dccc40f689acf5a2e412bf3e8b5a25c9a75198a163f5f2b4ee95df9" alt=""
-                    className="h-56 w-56 object-cover rounded-3xl grayscale"
+                <motion.div
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -203,8 +202,15 @@ const Main = () => {
                         hidden: { opacity: 0, x: 50 },
                         visible: { opacity: 1, x: 0 }
                     }}
+                >
 
-                />
+                    <motion.img
+                        src="https://img.freepik.com/foto-gratis/alegre-mujer-mediana-edad-cabello-rizado_1262-20859.jpg?w=1380&t=st=1695392116~exp=1695392716~hmac=53b4da669dccc40f689acf5a2e412bf3e8b5a25c9a75198a163f5f2b4ee95df9" alt=""
+                        className="h-56 w-56 object-cover rounded-3xl grayscale cursor-pointer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    />
+                </motion.div>
             </div>
         </main>
     )
